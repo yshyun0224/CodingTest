@@ -23,6 +23,18 @@ int main(void)
 
 	getMax(arr1, 10);
 	//sizeof(arr1)/sizeof(arr1[0])
+	
+	//함수 쓰지 않고 최소값과 idx 구하기
+	int min = 101;
+	int idxMin = 0;
+
+	for (int i = 0; i < sizeof(arr1) / sizeof(arr1[0]); i++) {
+		if (min > arr1[i]) {
+			min = arr1[i];
+			idxMin = i;
+		}
+	}
+	printf("\n최솟값 : %d, 위치 : %d", min, idxMin);
 
 	return 0;
 }
