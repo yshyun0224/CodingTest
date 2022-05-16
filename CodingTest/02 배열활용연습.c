@@ -35,9 +35,9 @@ int main(void)
 	//ÃÖ¼Ú°ªÀº 1(arr[2])
 	int arr1[10] = { 8, 5, 1, 6, 4, 9, 10, 14, 7, 11};
 
-	getMax(arr1, 10);
+	getMax(arr1, sizeof(arr1) / sizeof(arr1[0]));
 	//sizeof(arr1)/sizeof(arr1[0])
-	getMin(arr1, 10);
+	getMin(arr1, sizeof(arr1) / sizeof(arr1[0]));
 	
 	return 0;
 }
