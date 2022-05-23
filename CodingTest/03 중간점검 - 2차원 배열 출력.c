@@ -22,6 +22,7 @@ int main(void)
 		count++;
 	}
 	printf("%d", count);
+	printf("\n%d", strlen(str));
 
 	return 0;
 }
