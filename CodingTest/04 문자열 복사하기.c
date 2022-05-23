@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
-
+void my_strcpy(char* d, char* s) {
+	int length = strlen(d);
+	for (int i = 0; i < length; i++) {
+		d[i] = s[i];
+	}
+}
 
 int main(void)
 {
@@ -8,8 +14,11 @@ int main(void)
 	char dest[20]; //복사공간
 	char src[] = "Hello"; //복사할 문자열
 
+	//dest에 src에 있는 "Hello"를 복사
+	my_strcpy(dest, src);
+
 	for (int i = 0; i < strlen(dest); i++) {
-		dest[i] = src[i];
+		//dest[i] = src[i];
 		printf("%c", dest[i]);
 	}
 
