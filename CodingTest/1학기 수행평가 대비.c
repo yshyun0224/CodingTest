@@ -8,4 +8,9 @@ int main(void) {
 	//문자의 길이를 구하는 함수
 	int length = strlen(str);
 	printf("%d \n", length);
+
+	//문자열 복사 strcpy(복사공간, 복사대상)
+	char copy_str[15];
+	strcpy(copy_str, str);
+	printf("%s \n", copy_str);
 }
